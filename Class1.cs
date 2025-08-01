@@ -4,21 +4,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OddEven
+namespace PNZ
 {
-    public class OddEven
+    public class pnz
     {
-        public void Readnumber(int number)
+        int num;
+        public pnz()
         {
-            if (number % 2 == 0)
+            num = 2;
+        }
+        public pnz(int num)
+        {
+            this.num = num;
+        }
+        public void check()
+        {
+            if (num == 0)
             {
-                Console.WriteLine($"{number}is even");
+                Console.WriteLine("the number is zero");
+            }
+            else if (num > 0)
+            {
+                Console.WriteLine("the number is positive");
             }
             else
             {
-                Console.WriteLine($"{number}is odd");
+                Console.WriteLine("the number is negative");
             }
         }
     }
-   
 }
+
